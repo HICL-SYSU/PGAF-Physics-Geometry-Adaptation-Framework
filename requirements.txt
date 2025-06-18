@@ -1,0 +1,23 @@
+# CUDA >=11.3
+torch>=1.10.0
+torchvision
+torchaudio
+
+torch-geometric
+# Be sure to use the official wheel file when installing to match your torch and cuda versions
+torch-scatter
+torch-sparse
+torch-cluster
+torch-spline-conv
+pyg_lib
+
+# For OT
+geomloss>=0.2.5
+
+# data processing
+numpy>=1.21.0
+scipy
+
+# Progress Bars and Visualizations
+tqdm
+matplotlib
