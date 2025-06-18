@@ -9,7 +9,7 @@ This project implements a deep learning model to predict blood flow dynamics (pr
 .
 ├── data/                     # Main data directory
 │   ├── train/                # Training data, split into 6 sub-folders
-│   └── .../                
+│   └── test/                
 ├── config.py                 # Central configuration file for all parameters
 ├── requirements.txt          # Python dependencies
 ├── mydata.py                 # Defines the custom PyTorch Geometric dataset
@@ -50,6 +50,9 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 ```bash
 pip install -r requirements.txt
 ```
+
+Installation should take approximately 15-20 minutes on a standard machine with a good internet connection
+
 
 ## Data Preparation
 
