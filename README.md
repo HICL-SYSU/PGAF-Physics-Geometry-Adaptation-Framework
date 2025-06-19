@@ -9,6 +9,9 @@ This project implements a deep learning model to predict blood flow dynamics (pr
 .
 ├── data/                     # Main data directory
 │   ├── train/                # Training data, split into 6 sub-folders
+          ├── .../
+          ...               
+          ├── .../                
 │   └── test/                
 ├── config.py                 # Central configuration file for all parameters
 ├── requirements.txt          # Python dependencies
