@@ -12,7 +12,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 LEARNING_RATE = 1e-4
 
 # batch size
-BATCH_SIZE = 2
+BATCH_SIZE = 1
 
 # epochs
 NUM_EPOCHS = 500
@@ -23,13 +23,13 @@ NUM_EPOCHS = 500
 # -----------------------------------------------------------------------------
 
 # data root: including train/test；  need to manual setting
-DATA_DIR = "data"
+DATA_DIR = "/data/Aorta-data"
 
 # num works of data load
-NUM_WORKERS = 2
+NUM_WORKERS = 4
 
 # save path
-MODEL_SAVE_PATH = "saved_models/PGAF_model.pth"
+MODEL_SAVE_PATH = "/results/saved_models/PGAF_model.pth"
 
 
 # -----------------------------------------------------------------------------
@@ -41,6 +41,11 @@ FIELD_CHANNELS = 4
 
 # Latent space dimension: the dimension of the latent variable z in the CVAE model
 LATENT_DIM = 256
+
+# Number of points to sample for boundary and query point clouds
+# If set to None, will use all points (not recommended for varying point counts)
+NUM_BOUNDARY_POINTS = 64 
+NUM_QUERY_POINTS = 16384      
 
 
 # -----------------------------------------------------------------------------
