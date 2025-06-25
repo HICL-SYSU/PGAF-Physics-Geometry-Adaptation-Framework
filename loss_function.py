@@ -6,7 +6,7 @@ import config
 # --- Optimal Transport Loss ---
 # Used to compute the reconstruction loss, measuring the distance between two point cloud distributions.
 # The 'backend="auto"' setting will automatically select the fastest available backend (e.g., KeOps, PyTorch).
-ot_loss_func = SamplesLoss(loss="sinkhorn", p=2, blur=0.05, backend="auto")
+ot_loss_func = SamplesLoss(loss="sinkhorn", p=2, blur=0.05, backend="tensorized")
 
 
 def compute_ns_residuals(predicted_field, pos):
