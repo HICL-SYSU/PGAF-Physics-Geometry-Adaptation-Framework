@@ -1,4 +1,4 @@
-# model.py (Corrected version with English comments)
+# model.py
 import torch
 import torch.nn as nn
 from torch_geometric.nn import PointNetConv, global_max_pool, fps, knn, knn_interpolate
