@@ -95,5 +95,11 @@ The training process will:
 After training is complete, run the prediction script to load the best model and visualize its output on a sample from the `test` set.
 ```bash
 python predict.py
+
+or
+
+python predict.py --model_path {your pth}
 ```
+For example, if your model path is '/results/PGAF_model.pth', you could run prediction with the Command Line： python predict.py --model_path /results/PGAF_model.pth
+
 This will generate 3D plots comparing the ground truth flow field with the model's prediction.
