@@ -44,8 +44,8 @@ LATENT_DIM = 256
 
 # Number of points to sample for boundary and query point clouds
 # If set to None, will use all points (not recommended for varying point counts)
-NUM_BOUNDARY_POINTS = 64 
-NUM_QUERY_POINTS = 16384      
+NUM_BOUNDARY_POINTS = 256
+NUM_QUERY_POINTS = 32768      
 
 
 # -----------------------------------------------------------------------------
