@@ -1,4 +1,4 @@
-# CUDA >=11.3
+# CUDA >=11.8
 torch>=1.13.0
 torchvision
 torchaudio
